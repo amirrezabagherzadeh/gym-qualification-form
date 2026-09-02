@@ -5,7 +5,7 @@
 <p>یک تجربه‌ی کوتاه، شفاف و حرفه‌ای برای تشخیص لیدهای مناسب باشگاه‌ها — از اولین پاسخ تا پیگیری تیم فروش.</p>
 
 <p>
-  <a href="https://gym-qualification-form-qjpib59ko-amirrezabagherzadehs-projects.vercel.app"><img alt="نمایش نسخهٔ زنده" src="https://img.shields.io/badge/نسخهٔ_زنده-Vercel-166534?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://gym.amirrezabz.com"><img alt="نمایش نسخهٔ زنده" src="https://img.shields.io/badge/نسخهٔ_زنده-Vercel-166534?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-111111?style=for-the-badge&logo=next.js&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
   <img alt="PostgreSQL with Neon" src="https://img.shields.io/badge/PostgreSQL-Neon-336791?style=for-the-badge&logo=postgresql&logoColor=white">
