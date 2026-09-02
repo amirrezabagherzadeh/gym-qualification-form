@@ -15,6 +15,12 @@
 
 <br>
 
+<p align="center">
+  <a href="https://gym.amirrezabz.com"><img src="public/images/qualification-form.png" alt="Gym Qualification Form — public Persian right-to-left qualification flow" width="100%"></a>
+</p>
+
+<br>
+
 ## Product at a glance
 
 Gym Qualification Form is a Persian, right-to-left intake experience for fitness businesses. It replaces a long generic contact form with a concise, step-by-step flow that collects the context needed to assess intent, score the lead, and route it into a secure sales workflow.
