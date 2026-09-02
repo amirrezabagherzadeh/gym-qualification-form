@@ -1,11 +1,11 @@
-<div align="center" dir="rtl">
+<div align="center">
 
-# فرم ارزیابی هوشمند باشگاه
+# Gym Qualification Form
 
-<p>یک تجربه‌ی کوتاه، شفاف و حرفه‌ای برای تشخیص لیدهای مناسب باشگاه‌ها — از اولین پاسخ تا پیگیری تیم فروش.</p>
+<p>A focused lead-qualification experience for gym operators—designed to turn a short conversation into a prioritized, actionable sales opportunity.</p>
 
 <p>
-  <a href="https://gym.amirrezabz.com"><img alt="نمایش نسخهٔ زنده" src="https://img.shields.io/badge/نسخهٔ_زنده-Vercel-166534?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://gym.amirrezabz.com"><img alt="Live product" src="https://img.shields.io/badge/Live_Product-Vercel-166534?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-111111?style=for-the-badge&logo=next.js&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
   <img alt="PostgreSQL with Neon" src="https://img.shields.io/badge/PostgreSQL-Neon-336791?style=for-the-badge&logo=postgresql&logoColor=white">
@@ -15,174 +15,174 @@
 
 <br>
 
-<div dir="rtl">
+## Product at a glance
 
-## ایدهٔ محصول
-
-این پروژه یک فرم Qualification فارسی برای باشگاه‌ها است؛ به‌جای یک فرم بلند و خسته‌کننده، کاربر در هشت گام کوتاه به سؤال‌ها پاسخ می‌دهد. پاسخ‌ها بلافاصله با قواعد قابل‌مدیریت امتیازدهی می‌شوند و لید برای پیگیری به پنل امن مدیریت وارد می‌شود.
+Gym Qualification Form is a Persian, right-to-left intake experience for fitness businesses. It replaces a long generic contact form with a concise, step-by-step flow that collects the context needed to assess intent, score the lead, and route it into a secure sales workflow.
 
 <table>
   <tr>
-    <td align="center" width="33%"><b>برای مخاطب</b><br><br>مسیر تک‌سؤالی، سریع و بدون شلوغی<br><sub>تکمیل آسان در موبایل</sub></td>
-    <td align="center" width="33%"><b>برای تیم فروش</b><br><br>اولویت‌بندی لیدها با امتیاز و وضعیت<br><sub>تمرکز روی فرصت‌های باکیفیت</sub></td>
-    <td align="center" width="33%"><b>برای مدیر</b><br><br>قواعد نسخه‌بندی‌شده و قابل‌انتشار<br><sub>بهبود مدل بدون استقرار مجدد</sub></td>
+    <td align="center" width="33%"><b>For prospects</b><br><br>A calm, mobile-first flow with one clear decision at a time.<br><sub>Low effort · clear progress · immediate confirmation</sub></td>
+    <td align="center" width="33%"><b>For sales teams</b><br><br>Prioritized leads with context, qualification outcome, and follow-up status.<br><sub>Less triage · faster response · better focus</sub></td>
+    <td align="center" width="33%"><b>For operators</b><br><br>Versioned scoring rules that can evolve without a product deployment.<br><sub>Auditable decisions · controlled iteration</sub></td>
   </tr>
 </table>
 
-## سفر کاربر، به‌شکل تصویری
+## Experience map
 
 <table>
   <tr>
-    <td align="center">①<br><b>ورود</b><br><sub>عنوان روشن و هدف فرم</sub></td>
+    <td align="center">01<br><b>Orient</b><br><sub>Understand the purpose and time commitment</sub></td>
     <td align="center">→</td>
-    <td align="center">②<br><b>پاسخ کوتاه</b><br><sub>یک تصمیم در هر صفحه</sub></td>
+    <td align="center">02<br><b>Answer</b><br><sub>Complete eight focused prompts</sub></td>
     <td align="center">→</td>
-    <td align="center">③<br><b>ارزیابی</b><br><sub>اعتبارسنجی و امتیازدهی</sub></td>
+    <td align="center">03<br><b>Evaluate</b><br><sub>Validate, deduplicate, and score the response</sub></td>
     <td align="center">→</td>
-    <td align="center">④<br><b>پیگیری</b><br><sub>لیدِ قابل‌اقدام در پنل</sub></td>
+    <td align="center">04<br><b>Act</b><br><sub>Review and progress the lead in the admin workspace</sub></td>
   </tr>
 </table>
 
 <br>
 
-### ① تجربهٔ فرم عمومی
+## UI/UX rationale
+
+### Public qualification flow
+
+The public form is designed around a single principle: **make the next action obvious**. Instead of exposing every question at once, it presents one prompt per screen. This keeps the user’s attention on the decision in front of them and makes a meaningful qualification sequence feel lightweight.
 
 <table>
   <tr>
     <td width="58%">
-      <b>رویکرد UI</b><br><br>
-      رابط راست‌به‌چپ با تایپوگرافی فارسی Kalameh، پس‌زمینهٔ گرم و کارت سفید، حس حرفه‌ای و آرام ایجاد می‌کند. نوار پیشرفت، شمارندهٔ سؤال و برچسب «ضروری/اختیاری» همیشه جای کاربر را در مسیر روشن نگه می‌دارند.
+      <b>Visual direction</b><br><br>
+      The interface combines a warm, low-contrast background with a crisp off-white content card. Deep forest green anchors primary actions and progress, while soft lime and terracotta accents communicate positive states and optionality. Persian Kalameh typography, generous spacing, and a true RTL layout make the experience feel native rather than translated.
     </td>
     <td width="42%">
-      <pre><code>Qualification
+      <pre><code>QUALIFICATION
 
-بررسی پیاده‌سازی سیستم
-هوشمند برای باشگاه شما
+Assess the fit for your gym's
+intelligent system
 
-━━━━━━●━━━━━━  سؤال ۳ از ۸
+━━━━━━●━━━━━━  Question 3 of 8
 
-مهم‌ترین چالش شما چیست؟
+What is your biggest challenge?
 
 ┌──────────────────────────┐
-│  جذب عضو جدید           ○ │
+│  Attracting new members ○ │
 ├──────────────────────────┤
-│  مدیریت باشگاه          ○ │
+│  Gym operations         ○ │
 └──────────────────────────┘</code></pre>
     </td>
   </tr>
 </table>
 
 <table>
-  <tr>
-    <th>تصمیم UX</th>
-    <th>دلیل</th>
-    <th>اثر</th>
-  </tr>
-  <tr>
-    <td>یک سؤال در هر لحظه</td>
-    <td>کاهش بار شناختی</td>
-    <td>فرم کوتاه‌تر و قابل‌تمرکزتر حس می‌شود.</td>
-  </tr>
-  <tr>
-    <td>انتخاب‌های بزرگ و قابل لمس</td>
-    <td>استفادهٔ راحت روی تلفن</td>
-    <td>پاسخ گزینه‌ای با یک لمس ثبت می‌شود.</td>
-  </tr>
-  <tr>
-    <td>حرکت خودکار بعد از انتخاب</td>
-    <td>حذف یک کلیک غیرضروری</td>
-    <td>ریتم فرم سریع و طبیعی باقی می‌ماند.</td>
-  </tr>
-  <tr>
-    <td>بازخورد نتیجهٔ شفاف</td>
-    <td>پایان مشخص برای کاربر</td>
-    <td>پس از ثبت، پیام تأیید دریافت می‌کند.</td>
-  </tr>
+  <tr><th>Design decision</th><th>Why it matters</th><th>Outcome</th></tr>
+  <tr><td>One question per view</td><td>Reduces cognitive load and visual scanning.</td><td>The flow feels short, focused, and approachable.</td></tr>
+  <tr><td>Persistent progress feedback</td><td>Users can see their position and remaining effort.</td><td>Greater confidence to continue through the form.</td></tr>
+  <tr><td>Large selectable options</td><td>Supports quick, comfortable touch interaction.</td><td>Fast completion on mobile without precision tapping.</td></tr>
+  <tr><td>Advance after a selection</td><td>Removes a redundant confirmation step for choice fields.</td><td>A more natural, conversational pace.</td></tr>
+  <tr><td>Clear required and optional states</td><td>Sets expectations before the user attempts to continue.</td><td>Fewer validation surprises and less friction.</td></tr>
+  <tr><td>Focused completion state</td><td>Provides a definite end to the interaction.</td><td>The prospect knows their request was received.</td></tr>
 </table>
 
-### ② پنل مدیریت لیدها
+### Admin workspace
 
-پنل `/admin` برای اعضای دارای نقش <code>admin</code> در Clerk محافظت می‌شود. صفحهٔ لیدها، درخواست‌ها را در یک جدول عملیاتی نشان می‌دهد: نام، باشگاه، شماره، امتیاز، وضعیت و زمان ثبت. فیلترهای نام/باشگاه/موبایل، وضعیت، نتیجهٔ صلاحیت، نقش، بازهٔ تاریخ و مرتب‌سازی، رسیدگی روزانه را سریع می‌کنند.
+The admin experience is optimized for operational clarity rather than visual novelty. A fixed, minimal navigation rail keeps the two core jobs—**leads** and **scoring rules**—available at all times. The lead list is intentionally table-based: it makes comparison, filtering, and rapid scanning easier for a sales workflow than a card feed.
 
 <table>
   <tr>
-    <td align="center" width="25%">🧭<br><b>ناوبری ساده</b><br><sub>لیدها و قوانین در یک سایدبار</sub></td>
-    <td align="center" width="25%">🔎<br><b>فیلتر دقیق</b><br><sub>رسیدن به لید مناسب در چند ثانیه</sub></td>
-    <td align="center" width="25%">🏷️<br><b>وضعیت قابل‌پیگیری</b><br><sub>جدید تا جلسهٔ رزرو‌شده و بسته‌شده</sub></td>
-    <td align="center" width="25%">⬇️<br><b>خروجی آماده</b><br><sub>CSV و Excel با همان فیلترها</sub></td>
+    <td align="center" width="25%">🧭<br><b>Clear hierarchy</b><br><sub>A single navigation rail for the operational areas</sub></td>
+    <td align="center" width="25%">🔎<br><b>Fast retrieval</b><br><sub>Search, status, result, role, date, and sorting controls</sub></td>
+    <td align="center" width="25%">🏷️<br><b>Visible progress</b><br><sub>Lead status moves from new to closed or unsuitable</sub></td>
+    <td align="center" width="25%">⬇️<br><b>Portable data</b><br><sub>Filtered CSV and Excel exports for downstream work</sub></td>
   </tr>
 </table>
 
-### ③ قواعد امتیازدهی
+## Information architecture
 
-امتیازدهی از رابط کاربری جداست. مدیر ابتدا یک Draft از نسخهٔ فعال می‌سازد، وزن و حدنصاب را ویرایش می‌کند و سپس نسخه را منتشر می‌کند. هر ثبت جدید، به همان نسخهٔ فعال متصل می‌شود؛ بنابراین تصمیم‌های فروش قابل‌ردیابی و قابل‌بهبود باقی می‌مانند.
+<table>
+  <tr><th>Area</th><th>Primary user need</th><th>Key capabilities</th></tr>
+  <tr><td><code>/</code></td><td>Request an assessment</td><td>Eight-step form, progress feedback, input validation, confirmation state</td></tr>
+  <tr><td><code>/privacy</code></td><td>Understand data handling</td><td>Dedicated privacy information</td></tr>
+  <tr><td><code>/admin/leads</code></td><td>Prioritize and progress opportunities</td><td>Search, filters, score, qualification result, status, detail views, exports</td></tr>
+  <tr><td><code>/admin/leads/[id]</code></td><td>Prepare a meaningful follow-up</td><td>Full answer set, score, status management, notes, related context</td></tr>
+  <tr><td><code>/admin/rules</code></td><td>Improve qualification quality</td><td>Draft, edit, publish, and review scoring-rule versions</td></tr>
+</table>
 
-<pre><code>قواعد فعال v3 ──→ اعتبارسنجی پاسخ‌ها ──→ امتیاز + qualified ──→ لید قابل‌پیگیری
-       │
-       └──→ ساخت Draft جدید ──→ ویرایش وزن‌ها ──→ انتشار v4</code></pre>
+## Responsive behavior
 
-## معماری
+The public flow is mobile-first, because qualification often begins on a phone. The primary card scales within a constrained reading width; action buttons become full width on small screens; inputs and choices maintain comfortable touch targets.
+
+The admin workspace adapts differently. On desktop, its sidebar and data table support high-density review. Below the tablet breakpoint, the layout becomes single-column, navigation becomes horizontally accessible, filters stack, and table content remains scrollable instead of sacrificing important operational data.
+
+## Scoring workflow
+
+Scoring is deliberately separated from the form interface. A manager creates a draft from the active rule set, updates option weights and the qualification threshold, then publishes a new version. Each submitted lead records the rule-set version that evaluated it, preserving context for future analysis.
+
+<pre><code>Active rules ──→ validate answers ──→ calculate score + qualification ──→ actionable lead
+     │
+     └──→ create draft ──→ adjust weights / threshold ──→ publish next version</code></pre>
+
+## System architecture
 
 <table>
   <tr>
-    <td align="center">👤<br><b>کاربر</b><br><sub>فرم Next.js</sub></td>
+    <td align="center">👤<br><b>Prospect</b><br><sub>Next.js form</sub></td>
     <td align="center">→</td>
-    <td align="center">🛡️<br><b>API</b><br><sub>Zod · BotID · محدودیت حجم</sub></td>
+    <td align="center">🛡️<br><b>API layer</b><br><sub>Zod · BotID · request limits</sub></td>
     <td align="center">→</td>
-    <td align="center">🧮<br><b>موتور امتیاز</b><br><sub>قواعد فعال</sub></td>
+    <td align="center">🧮<br><b>Scoring engine</b><br><sub>Active rule set</sub></td>
     <td align="center">→</td>
-    <td align="center">🗄️<br><b>Neon Postgres</b><br><sub>Drizzle ORM</sub></td>
+    <td align="center">🗄️<br><b>Data layer</b><br><sub>Neon Postgres · Drizzle</sub></td>
     <td align="center">→</td>
-    <td align="center">🧑‍💼<br><b>ادمین</b><br><sub>Clerk-protected</sub></td>
+    <td align="center">🧑‍💼<br><b>Admin</b><br><sub>Clerk-protected workspace</sub></td>
   </tr>
 </table>
 
 <ul>
-  <li><b>Next.js 16 + React 19:</b> رابط و Route Handlerهای یکپارچه.</li>
-  <li><b>Neon + Drizzle:</b> داده‌های لید، یادداشت‌ها و نسخه‌های قواعد.</li>
-  <li><b>Clerk:</b> احراز هویت و کنترل نقش برای پنل مدیریت.</li>
-  <li><b>Vercel BotID:</b> تشخیص درخواست‌های ربات در محیط Vercel.</li>
-  <li><b>Vercel Cron:</b> پاک‌سازی روزانهٔ لیدهای بسته/نامناسب پس از دورهٔ نگهداری.</li>
+  <li><b>Next.js 16 and React 19:</b> the application interface and server route handlers.</li>
+  <li><b>Neon Postgres and Drizzle ORM:</b> leads, notes, and versioned scoring rules.</li>
+  <li><b>Clerk:</b> authentication and role-based access to the admin workspace.</li>
+  <li><b>Vercel BotID:</b> bot detection for requests handled on Vercel.</li>
+  <li><b>Vercel Cron:</b> daily retention processing for closed and unsuitable leads.</li>
 </ul>
 
-## حریم خصوصی و تاب‌آوری
+## Trust, privacy, and resilience
 
 <table>
-  <tr><th>مکانیزم</th><th>نقش آن</th></tr>
-  <tr><td>اعتبارسنجی Zod و نرمال‌سازی موبایل ایران</td><td>ذخیرهٔ دادهٔ سازگار و جلوگیری از ورودی نامعتبر</td></tr>
-  <tr><td>توکن یکتای ثبت</td><td>ثبت idempotent؛ کلیک یا ارسال تکراری لید جدید نمی‌سازد</td></tr>
-  <tr><td>محدودسازی تعداد ثبت برای هر شماره</td><td>حداکثر سه تلاش در ۲۴ ساعت</td></tr>
-  <tr><td>Honeypot، حد زمان تکمیل و BotID</td><td>کاهش ارسال خودکار و رفتار مشکوک</td></tr>
-  <tr><td>نسخهٔ سیاست حریم خصوصی و زمان رضایت</td><td>ثبت زمینهٔ رضایت برای هر لید</td></tr>
+  <tr><th>Control</th><th>Purpose</th></tr>
+  <tr><td>Zod validation and Iranian mobile normalization</td><td>Store consistent, valid data before it enters the workflow.</td></tr>
+  <tr><td>Unique submission token</td><td>Provide idempotent submissions; repeated sends do not create duplicate records.</td></tr>
+  <tr><td>Per-phone rate limit</td><td>Allow at most three submissions per phone number in 24 hours.</td></tr>
+  <tr><td>Honeypot, plausible-completion check, and BotID</td><td>Reduce automated and suspicious form activity.</td></tr>
+  <tr><td>Privacy-policy version and consent timestamp</td><td>Retain the policy context associated with every stored lead.</td></tr>
+  <tr><td>Versioned scoring rules</td><td>Make qualification decisions traceable and explainable over time.</td></tr>
 </table>
 
-## اجرای محلی
+## Local development
 
 <ol>
-  <li>Node.js 24 و Vercel CLI را نصب کنید.</li>
-  <li>متغیرهای محیطی را از پروژهٔ Vercel دریافت کنید:
+  <li>Install Node.js 24 and the Vercel CLI.</li>
+  <li>Pull the connected project’s environment variables:
     <pre><code>vercel env pull .env.local --yes</code></pre>
   </li>
-  <li>مقادیر <code>NEXT_PUBLIC_PRIVACY_CONTACT_EMAIL</code> و <code>CRON_SECRET</code> را تنظیم کنید؛ در صورت وجود صفحهٔ رزرو، <code>NEXT_PUBLIC_BOOKING_URL</code> را هم بیفزایید.</li>
-  <li>migration اولیه را اجرا کنید:
+  <li>Set <code>NEXT_PUBLIC_PRIVACY_CONTACT_EMAIL</code> and <code>CRON_SECRET</code>. If there is a scheduling destination, also set <code>NEXT_PUBLIC_BOOKING_URL</code>.</li>
+  <li>Run the initial database migration:
     <pre><code>npm run db:migrate:local</code></pre>
   </li>
-  <li>سرور توسعه را بالا بیاورید:
+  <li>Start the development server:
     <pre><code>npm run dev</code></pre>
   </li>
 </ol>
 
-## بررسی کیفیت و انتشار
+## Quality checks
 
 <pre><code>npm run lint
 npm run typecheck
 npm test
 npm run build</code></pre>
 
-پیش از انتشار واقعی، اتصال Neon در محیط Production، حساب Clerk Production، کاربر ادمین اولیه، ایمیل حریم خصوصی، دامنهٔ اختصاصی و <code>CRON_SECRET</code> را بررسی کنید. Preview و Development باید به دیتابیس جدا از دادهٔ واقعی وصل باشند.
+Before a production launch, verify the production Neon connection, Clerk production settings, the initial admin account, privacy contact email, custom domain, and <code>CRON_SECRET</code>. Preview and development deployments should use a database that is separate from real customer data.
 
 <hr>
 
-<p align="center"><sub>ساخته‌شده برای تبدیل گفت‌وگوهای اولیه به فرصت‌های فروش قابل‌پیگیری.</sub></p>
-
-</div>
+<p align="center"><sub>Designed to transform early conversations into clear, prioritized sales opportunities.</sub></p>
