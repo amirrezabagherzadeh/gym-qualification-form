@@ -1,0 +1,16 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { addLeadNote, deleteLead, updateLeadStatus } from "@/app/admin/actions";
+import { formatDate } from "@/lib/dates";
+import { getLeadDetail } from "@/lib/leads";
+
+const statusLabels: Record<string, string> = { new: "جدید", contacted: "تماس گرفته شد", meeting_booked: "جلسه رزرو شد", unsuitable: "نامناسب", closed: "بسته‌شده" };
+
+export default async function LeadDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const detail = await getLeadDetail(id);
+  if (!detail) notFound();
+  const { lead, notes, related, ruleVersion } = detail;
+  const answers = [["نسبت با باشگاه", lead.relation], ["نام", lead.fullName], ["باشگاه", lead.gymName], ["سمت", lead.role], ["تعداد عضو", lead.members], ["چالش", lead.challenge], ["موبایل", lead.phone], ["زمان‌بندی", lead.timeline ?? "—"]];
+  return <><header className="detail-heading"><div><Link href="/admin/leads" className="back-link">بازگشت به لیدها</Link><h1>{lead.fullName}</h1><p>{lead.gymName} · ثبت {formatDate(lead.createdAt)}</p></div><span className={lead.qualified ? "score big good" : "score big"}>{lead.score}<small>امتیاز</small></span></header><div className="detail-grid"><section className="admin-card"><h2>پاسخ‌های فرم</h2><dl className="answers">{answers.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl><div className="meta-row"><span>نتیجه: <b>{lead.qualified ? "واجد شرایط" : "نیازمند پیگیری"}</b></span><span>نسخه قواعد: {ruleVersion}</span><span>رضایت: {lead.privacyPolicyVersion}</span></div></section><aside className="admin-card"><h2>پیگیری</h2><form action={updateLeadStatus} className="status-form"><input name="leadId" type="hidden" value={lead.id} /><select name="status" defaultValue={lead.status}>{Object.entries(statusLabels).map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select><button>به‌روزرسانی</button></form><p className="muted">آخرین تغییر: {formatDate(lead.statusChangedAt)}</p>{lead.retentionDueAt ? <p className="muted">حذف خودکار: {formatDate(lead.retentionDueAt)}</p> : null}</aside></div><section className="admin-card notes-card"><h2>یادداشت‌های داخلی</h2><form action={addLeadNote} className="note-form"><input name="leadId" type="hidden" value={lead.id} /><textarea name="body" maxLength={4000} required placeholder="یادداشت جدید…" /><button>ثبت یادداشت</button></form><div className="note-list">{notes.length ? notes.map((note) => <article key={note.id}><p>{note.body}</p><small>{note.authorName} · {formatDate(note.createdAt)}</small></article>) : <p className="muted">هنوز یادداشتی ثبت نشده است.</p>}</div></section>{related.length ? <section className="admin-card"><h2>ثبت‌های دیگر با این شماره</h2><ul className="related-list">{related.map((item) => <li key={item.id}><Link href={`/admin/leads/${item.id}`}>{formatDate(item.createdAt)} · امتیاز {item.score} · {statusLabels[item.status]}</Link></li>)}</ul></section> : null}<details className="danger-zone"><summary>حذف دائمی لید</summary><form action={deleteLead}><input name="leadId" type="hidden" value={lead.id} /><label>برای تأیید، «حذف» را بنویسید<input name="confirm" required autoComplete="off" /></label><button>حذف غیرقابل‌بازگشت</button></form></details></>;
+}
