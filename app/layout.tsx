@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "فرم بررسی باشگاه",
-  description: "فرم Qualification مرحله‌ای برای تشخیص لید مناسب باشگاه.",
+  title: "درخواست مشاوره باشگاه",
+  description: "فرم کوتاه درخواست مشاوره برای پیدا کردن راه‌حل مناسب باشگاه شما.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
